@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Weather</title>
+</head>
+<body>
+    <header class="header">
+      <nav class="menu">
+          <div class="refresh-button">
+            <span class="fa fa-refresh fa-spin fa-3x fa-fw" id="refresh-sign"></span>
+          </div>
+  
+          <div class="language-button">
+            <select class="language-button-content">
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+              <option value="by">BY</option>
+            </select>
+          </div> 
+  
+          <div class="temperature-buttons">
+            <div class="temperature-buttons_radio">
+              <input type="radio" name="temperature" value="C" class="radio-input" id="temperature-celsius"></input>
+              <label class="radio-label radio-label_celsius" for="celsius-button">°C</label>
+            </div>
+            <div class="temperature-buttons_radio">
+              <input type="radio" name="temperature" value="F" class="radio-input" id="temperature-fahrenheit"></input>
+              <label class="radio-label radio-label_fahrenheit" for="fahrenheit-button">°F</label>
+            </div>
+          </div>
+        </nav>
+  
+        <form action="" method="get" class="search-form">
+          <input
+            class="search-field"
+            name="search"
+            placeholder="Search your city or ZIP"
+            type="text"
+          />
+          <button type="button" class="search-button"></button>
+        </form>
+      </header>
+      <main class="main">
+        <div class="weather-city-information">
+          <div class="city-time">
+            <h1>
+              <span class="city-name"></span>  <span class="country-name"></span>
+            </h1>
+            <h3>
+              <span class="day-today"></span> <span class="date-today"></span>
+              <span class="month"></span> <span class="time"></span>
+            </h3>
+          </div>
+  
+          <section class="weather-today">
+            <div class="weather-today__temperature_number">
+              <span class="weather-today__temperature_number_value"></span>
+              <span class="weather-today__temperature_sign-degree">°</span>
+              <img class="current-icon"/>
+            </div>
+            <ul class="weather-today__description">
+              <li class="weather-today_summury"></li>
+              <li class="weather-today_feel"></li>
+              <li class="weather-today_wind"></li>
+              <li class="weather-today_humidity"></li>
+            </ul>
+          </section>
+  
+          <section class="weather-next-days">
+            <div class="weather-next-days__first weather-next-days_item">
+              <div class="weather-next-days__first_name-day weather-next-days_name-day">
+              </div>
+              <div class="weather-next-days__first_temperature_number weather-next-days_temperature_number">
+                <span class="weather-next-days__first_temperature_value"></span> <span class="weather-next-days_sign-degree">°</span>
+              </div>
+              <div class="weather-next-days__first_icons weather-next-days_icons">
+                <img class="weather-next-days__first_icons-img weather-next-days_icons_img"/>
+              </div>
+            </div>
+  
+            <div class="weather-next-days__second weather-next-days_item">
+              <div class="weather-next-days__second_name-day weather-next-days_name-day"></div>
+              <div class="weather-next-days__second_temperature_number weather-next-days_temperature_number">
+                  <span class="weather-next-days__second_temperature_value"></span>
+                  <span class="weather-next-days_sign-degree">°</span>
+              </div>
+              <div class="weather-next-days__second_icons weather-next-days_icons">
+                <img class="weather-next-days__second_icons-img weather-next-days_icons_img"/>
+              </div>
+            </div>
+  
+            <div class="weather-next-days__third weather-next-days_item">
+              <div class="weather-next-days__third_name-day weather-next-days_name-day"></div>
+              <div class="weather-next-days__third_temperature_number weather-next-days_temperature_number">
+                <span class="weather-next-days__third_temperature_value"></span>
+                <span class="weather-next-days_sign-degree">°</span>
+              </div>
+              <div class="weather-next-days__third_icons weather-next-days_icons">
+                <img class="weather-next-days__third_icons-img weather-next-days_icons_img"/>
+              </div>
+            </div>
+          </section>
+        </div>
+  
+        <section class="user-location">
+          <div class="user-location__geolocation"></div>
+          <div class="user-location__coordinates">
+            <span class="latitude">Latitude: 54</span><br />
+            <span class="longitude">Longitude: 55</span>
+          </div>
+        </section>
+      </main>
+  </body>
+</html>
